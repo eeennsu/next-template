@@ -1,8 +1,4 @@
-
 import { JSX } from 'react';
-import { z } from 'zod';
-
-
 
 export type Nullable<T> = T | null;
 
@@ -25,8 +21,6 @@ export interface IMenu {
 
 export type SubMenu = Record<string, IMenu>;
 
-
-
 export interface IList<T> {
   page: number;
   total: number;
@@ -43,7 +37,7 @@ type TableItemType = string | number | boolean;
 export type ITableItem = Record<string, TableItemType>;
 export type TableExtraKey = 'delete';
 
-export type SearchFormDto = z.infer<typeof SearchFormDtoSchema>;
+// export type SearchFormDto = z.infer<typeof SearchFormDtoSchema>;
 
 interface IAuditDate {
   createdAt: string;
@@ -83,7 +77,6 @@ export interface IItemResponse {
   data: any;
 }
 
-
 export type Updater<T> = (value: T | ((prev: T) => T)) => void;
 export interface IPageParams {
   page: number;
@@ -94,4 +87,3 @@ export interface IPageParams {
 export type ProductData<T> = Partial<T> & {
   image: string;
 };
-

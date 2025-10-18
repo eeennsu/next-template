@@ -14,5 +14,3 @@ export const SortOrderSchema = z
     },
     { message: '순서는 1 이상의 정수여야 합니다.' },
   );
-
-

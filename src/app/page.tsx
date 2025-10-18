@@ -1,10 +1,7 @@
 import { FC } from 'react';
-import { useState } from 'react';
 
 const HomePage: FC = () => {
-  const t = 4;
-
-  return <div>Hello</div>;
+  return <div>Hello world</div>;
 };
 
 export default HomePage;
