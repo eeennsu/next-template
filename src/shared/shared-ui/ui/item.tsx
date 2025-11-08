@@ -3,7 +3,7 @@ import { cn } from '@shared/shadcn/utils';
 import { cva, type VariantProps } from 'class-variance-authority';
 import * as React from 'react';
 
-import { Separator } from '@app/components/ui/separator';
+import { Separator } from './separator';
 
 function ItemGroup({ className, ...props }: React.ComponentProps<'div'>) {
   return (

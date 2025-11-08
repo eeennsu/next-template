@@ -51,7 +51,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='ko'>
+    <html lang='ko' data-scroll-behavior='smooth'>
       <body className={cn('antialiased', geistSans.variable, geistMono.variable)}>
         <ConfigProviders>
           <div className='flex h-dvh w-full flex-col'>
